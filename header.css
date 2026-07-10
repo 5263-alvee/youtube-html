@@ -1,0 +1,219 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(238, 235, 235);
+    z-index: 100;
+
+}
+.left-section {
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+.youtube-logo {
+    width: 100px;
+    height: 30px;
+    margin-left: 5px; 
+    margin-top: 5px;
+
+}
+.middle-section {
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 80px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+.search-button {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    margin-left: -3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(238, 236, 236);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.search-button, 
+.voice-search-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.search-button .tooltip, 
+.voice-search-button .tooltip {
+    font-family: 'Roboto', Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -35px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+.search-button:hover .tooltip, 
+.voice-search-button:hover .tooltip {
+    opacity: 1;
+
+}
+.voice-search-button {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 1px solid #e9e5e5;
+    background-color: rgb(238, 238, 238);
+
+}
+.search {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width:0;
+}
+.search::placeholder {
+    color: gray;
+    font-size: 14px;
+    font-family: roboto, Arial, sans-serif;
+}
+.search-icon {
+    height: 20px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.voice-icon {
+    height: 25px;
+    position: absolute;
+  
+}
+
+.right-section {
+    width: 400px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    flex-shrink: 0;
+}
+.upload-container,
+.yt-apps-container,
+.notifications-icon-container,
+.user-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.upload-container .tooltip,
+.yt-apps-container .tooltip,
+.notifications-icon-container .tooltip,
+.user-container .tooltip {
+    font-family: 'Roboto', Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -21px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+.upload-container:hover .tooltip,
+.yt-apps-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.user-container:hover .tooltip {
+    opacity: 1;
+}   
+
+.upload-icon {
+    height:30px;
+    width:30px;
+    padding-bottom:20px;
+}
+.yt-apps {
+    height:30px;
+    width:30px; 
+    margin-left: 36px;
+    padding-bottom:20px;
+}
+.notifications-icon {
+    height:30px;
+    width:30px;
+    margin-left: 30px;
+    padding-bottom:16px;
+    
+}
+.user-icon {
+    height:30px;
+    border-radius: 20px;
+    width:30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-bottom:20px;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    left: 45px;
+    background-color: rgb(234, 8, 8);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+
+
+
+
+
